@@ -1,0 +1,150 @@
+span{
+    color: #037BC0;
+}
+h1, h2, h3{
+    text-align: center;
+    font-family: 'Playfair' 
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    font-size: 62.5;
+    font-family: 'Raleway', sans-serif;
+    justify-content: center;
+       }
+h1, h2, h3{
+    font-family: 'Raleway', sans-serif;
+
+
+}
+
+h1{
+    font-size: 5rem;
+    
+   }
+
+h2, h3{
+    font-size: 4rem;    
+}
+
+
+.hero{
+    background-image: url(file:///C:/Users/joaqu/OneDrive/Escritorio/principal.jpg);
+    background-size: cover;
+    height: 25rem;  
+    background-position: center;  
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    width: 100%;
+    background-color: silver;
+    padding: 10px;
+}
+
+.producto section{
+    background-color: #037BC0;
+}
+.producto a{
+    padding: 5px;
+    border: 7px;
+    border-color: #8cbc00;
+    background-color: #8cbc00;
+    border-radius: 3px;
+    color: white;
+    
+}
+.producto p{
+    text-decoration: solid;
+    font-size: x-large;
+}
+
+.producto{
+display: grid;
+width: 100%;
+padding: 100px;
+justify-content: center;
+text-align: center;
+color: white;
+
+}
+#pro1{
+    display: grid;
+    grid-template-columns:50% 50%;
+    padding: 10px;
+   }
+
+#pro2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+
+}
+#pro2 div{
+    padding: 10px;
+}
+
+#pro3{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+   
+}
+#pro3 div{
+    padding: 10px;
+}
+
+#fotos{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33% 33% 33%;
+    padding: 100px;
+}
+footer{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    padding: 50px;
+    
+}
+footer li{
+    list-style: none;
+
+}
+footer li a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 700px) {
+
+    #pro1{
+                grid-template-columns: 100%;
+
+    }
+    #pro2 div{
+        grid-column: 1/ span 2;
+    }
+    #pro3 div{
+        grid-column: 1/ span 3;
+    }
+    #fotos div{
+        grid-column: 1/ span 3;
+    }
+    footer div{
+        grid-column: 1/ span 3;
+        
+    }
+    #fotos{
+        text-decoration: solid black;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+}
